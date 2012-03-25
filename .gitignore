@@ -1,0 +1,8 @@
+*.pidb
+*.VisualState.xml
+*.suo
+/TestApplication1/obj
+/TestApplication1/bin
+
+/Glyphe/obj
+/Glyphe/bin

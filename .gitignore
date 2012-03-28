@@ -3,6 +3,7 @@
 *.suo
 /TestApplication1/obj
 /TestApplication1/bin
-
 /Glyphe/obj
 /Glyphe/bin
+/GlypheTests/bin
+/GlypheTests/obj

@@ -1,6 +1,6 @@
 ﻿/*
  * Copyright (c) 2010-2012, Achim 'ahzf' Friedland <code@ahzf.de>
- * This file is part of Glyphe <http://www.github.com/ahzf/Glyphe>
+ * This file is part of Glyphe <http://www.github.com/Vanaheimr/Glyphe>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

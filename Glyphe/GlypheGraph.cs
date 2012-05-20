@@ -24,7 +24,7 @@ using System.Text.RegularExpressions;
 
 using de.ahzf.Styx;
 using de.ahzf.Blueprints.PropertyGraphs;
-using de.ahzf.Blueprints.PropertyGraphs.InMemory.Mutable;
+using de.ahzf.Blueprints.PropertyGraphs.InMemory;
 
 #endregion
 
@@ -75,7 +75,7 @@ namespace de.ahzf.Glyphe
 
                         _FilteredWord = _Pattern.Replace(_Word, "").ToLower();
 
-                        var _WVertex = _TAGraph.Vertices(vertex => ((String) vertex.GetProperty("Word")) == _FilteredWord).FirstOrDefault();
+                        var _WVertex = _TAGraph.Vertices(vertex => ((String) vertex["Word"]) == _FilteredWord).FirstOrDefault();
                         if (_WVertex == null)
                         {
 

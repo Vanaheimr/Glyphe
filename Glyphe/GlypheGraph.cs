@@ -22,9 +22,9 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-using de.ahzf.Styx;
-using de.ahzf.Blueprints.PropertyGraphs;
-using de.ahzf.Blueprints.PropertyGraphs.InMemory;
+using de.ahzf.Vanaheimr.Styx;
+using de.ahzf.Vanaheimr.Blueprints;
+using de.ahzf.Vanaheimr.Blueprints.InMemory;
 
 #endregion
 

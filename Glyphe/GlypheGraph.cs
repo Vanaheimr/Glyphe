@@ -34,11 +34,14 @@ namespace de.ahzf.Glyphe
     public class GlypheGraph
     {
 
-        private IPropertyGraph _TAGraph;
+        private IGenericPropertyGraph<String, Int64, String, String, Object,
+                                      String, Int64, String, String, Object,
+                                      String, Int64, String, String, Object,
+                                      String, Int64, String, String, Object> _TAGraph;
 
         public GlypheGraph()
         {
-            _TAGraph = new PropertyGraph();
+            _TAGraph = GraphFactory.CreateGenericPropertyGraph2("Glyphe");
         }
 
         public void ReadFile(String Filename)
@@ -66,7 +69,7 @@ namespace de.ahzf.Glyphe
                                                                 SetProperty("Number", _LineNumber++).
                                                                 SetProperty("Text",   _Line));
 
-                    _TAGraph.AddEdge(_LineVertex, _FileVertex, "line2file");
+                    _TAGraph.AddEdge(_LineVertex, "line2file", _FileVertex);
 
                     _WordNumber = 0UL;
 

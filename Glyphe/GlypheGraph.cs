@@ -41,7 +41,7 @@ namespace de.ahzf.Glyphe
 
         public GlypheGraph()
         {
-            _TAGraph = GraphFactory.CreateGenericPropertyGraph2("Glyphe");
+            _TAGraph = GraphFactory.CreateGenericPropertyGraph_WithStringIds("Glyphe");
         }
 
         public void ReadFile(String Filename)

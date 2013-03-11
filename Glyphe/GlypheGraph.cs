@@ -22,13 +22,12 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-using de.ahzf.Vanaheimr.Styx;
-using de.ahzf.Vanaheimr.Blueprints;
-using de.ahzf.Vanaheimr.Blueprints.InMemory;
+using eu.Vanaheimr.Styx;
+using eu.Vanaheimr.Balder;
 
 #endregion
 
-namespace de.ahzf.Glyphe
+namespace eu.Vanaheimr.Glyphe
 {
 
     public class GlypheGraph
@@ -39,9 +38,12 @@ namespace de.ahzf.Glyphe
                                       String, Int64, String, String, Object,
                                       String, Int64, String, String, Object> _TAGraph;
 
-        public GlypheGraph()
+        public GlypheGraph(IGenericPropertyGraph<String, Int64, String, String, Object,
+                                                 String, Int64, String, String, Object,
+                                                 String, Int64, String, String, Object,
+                                                 String, Int64, String, String, Object> Graph)
         {
-            _TAGraph = GraphFactory.CreateGenericPropertyGraph_WithStringIds("Glyphe");
+            _TAGraph = Graph;
         }
 
         public void ReadFile(String Filename)
